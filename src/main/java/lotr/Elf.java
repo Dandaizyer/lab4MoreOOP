@@ -9,10 +9,10 @@ public class Elf extends Character {
     public void kick(Character opponent) {
         if (opponent.getPower() < this.getPower()) {
             opponent.setHp(0);
-            System.out.println("Elf killed the weaker opponent!");
+            System.out.println("elf killed weaker opponent!");
         } else {
             opponent.setPower(opponent.getPower() - 1);
-            System.out.println("Elf decreased opponent's power by 1");
+            System.out.println("elf made opponent's power fewer by 1");
         }
     }
 }
